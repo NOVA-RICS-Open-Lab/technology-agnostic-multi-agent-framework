@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tamaf"
+version = "0.0.1"
+authors = [
+  { name="Raúl Mestre Dinis", email="rj.dinis@campus.fct.unl.pt" },
+]
+description = "Python TAMAF Implementation"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = {text = "MIT"}
+dependencies = [
+    "python-dotenv>=1.0.0",
+]
+[project.urls]
+Git = "https://github.com/RaulJMD/Master-Thesis"
+Issues = "https://github.com/RaulJMD/Master-Thesis/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]

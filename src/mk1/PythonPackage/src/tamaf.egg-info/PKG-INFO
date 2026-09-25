@@ -1,0 +1,19 @@
+Metadata-Version: 2.4
+Name: tamaf
+Version: 0.0.1
+Summary: Python TAMAF Implementation
+Author-email: Raúl Mestre Dinis <rj.dinis@campus.fct.unl.pt>
+License: MIT
+Project-URL: Git, https://github.com/RaulJMD/Master-Thesis
+Project-URL: Issues, https://github.com/RaulJMD/Master-Thesis/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: python-dotenv>=1.0.0
+Dynamic: license-file
+
+Command to run this:
+
+py -m pip install -e "D:\Master-Thesis\Src\mk1\PythonPackage" ; py Src/mk1/PythonPackage/tests/launchema.py

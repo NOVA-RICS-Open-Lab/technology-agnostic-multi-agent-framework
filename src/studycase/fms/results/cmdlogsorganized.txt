@@ -1,0 +1,110 @@
+///////// Agents Birth and Registration /////////
+[FMS_Tower_PC] Agent Born: FMS_Tower_PC@192.168.2.90
+[FMS_Tower_PC] Agent active at: 192.168.2.90:4001
+[FMS_Tower_PC] Sent message to EMA (REGISTRATION REQUEST)
+[FMS_Tower_PC] Received message from EMA (INFORM)
+[FMS_Tower_PC] Agent active at: 192.168.2.90:4096
+[Transport_ESP32] Connecting to WiFi..
+[Transport_ESP32] WiFi Connected! ESP32 IP: 192.168.250.105
+[Transport_ESP32] Starting Transport Agent...
+[Transport_ESP32] Agent active at: 0.0.0.0:4001
+[Transport_ESP32] Agent Born: Transport_ESP32
+[Transport_ESP32] Sent message to EMA@192.168.2.90:4000 (REGISTRATION REQUEST)
+[Transport_ESP32] Received message from EMA (INFORM)
+[Transport_ESP32] Agent setup completed and started successfully.
+[Product_RPi] Agent Born: Product_RPi@192.168.4.4:None
+[Product_RPi] Agent active at: 192.168.4.4:4001
+[Product_RPi] Sent message to EMA@192.168.4.4:4000 (REGISTRATION REQUEST)
+[Product_RPi] Received message from EMA@192.168.4.4:4000 (INFORM)
+[Product_RPi] Agent active at: 192.168.4.4:4013
+
+///////// First Skill /////////
+[Product_RPi] Sent message to EMA@192.168.4.4:4000 (SEARCH REQUEST)
+[Product_RPi] Received message from EMA@192.168.4.4:4000 (INFORM)
+[Product_RPi] Sent message to FMS_Tower_PC@192.168.2.90:4096 (CFP)
+[FMS_Tower_PC] Received message from Product_RPi (CFP)
+[FMS_Tower_PC] Creating proposal
+[FMS_Tower_PC] Sent message to Product_RPi (PROPOSE)
+[Product_RPi] Received message from FMS_Tower_PC@192.168.2.90:4096 (PROPOSE)
+[Product_RPi] Sent message to FMS_Tower_PC@192.168.2.90:4096 (ACCEPT_PROPOSAL)
+[FMS_Tower_PC] Received message from Product_RPi (ACCEPT_PROPOSAL)
+[FMS_Tower_PC] Proposal Accepted
+[FMS_Tower_PC] Sent message to Product_RPi (INFORM)
+[Product_RPi] Received message from FMS_Tower_PC@192.168.2.90:4096 (INFORM)
+[Product_RPi] Sent message to EMA@192.168.4.4:4000 (SEARCH REQUEST)
+[Product_RPi] Received message from EMA@192.168.4.4:4000 (INFORM)
+[Product_RPi] Sent message to Transport_ESP32@192.168.250.105:4001 (REQUEST)
+[Transport_ESP32] Received message from Product_RPi (REQUEST)
+[Transport_ESP32] Received transport request to target location: D (Current location: A)
+[Transport_ESP32] Sent message to Product_RPi@192.168.4.4:4013 (AGREE)
+[Product_RPi] Received message from Transport_ESP32@192.168.250.105:4001 (AGREE)
+[Transport_ESP32] Moving product from A to B
+[Transport_ESP32] Arrived at B
+[Transport_ESP32] Moving product from B to C
+[Transport_ESP32] Arrived at C
+[Transport_ESP32] Moving product from C to D
+[Transport_ESP32] Arrived at D
+[Transport_ESP32] Sent message to Product_RPi@192.168.4.4:4013 (INFORM)
+[Product_RPi] Received message from Transport_ESP32@192.168.250.105:4001 (INFORM)
+[Product_RPi] Sent message to FMS_Tower_PC@192.168.2.90:4096 (REQUEST)
+[FMS_Tower_PC] Received message from Product_RPi (REQUEST)
+[FMS_Tower_PC] Received REQUEST execute skill
+[FMS_Tower_PC] Sent message to Product_RPi (AGREE)
+[Product_RPi] Received message from FMS_Tower_PC@192.168.2.90:4096 (AGREE)
+[FMS_Tower_PC] Skill executed: Drill
+[FMS_Tower_PC] Sent message to Product_RPi (INFORM)
+[Product_RPi] Received message from FMS_Tower_PC@192.168.2.90:4096 (INFORM)
+
+///////// Second Skill /////////
+[Product_RPi] Sent message to EMA@192.168.4.4:4000 (SEARCH REQUEST)
+[Product_RPi] Received message from EMA@192.168.4.4:4000 (INFORM)
+[Product_RPi] Sent message to FMS_Tower_PC@192.168.2.90:4096 (CFP)
+[FMS_Tower_PC] Received message from Product_RPi (CFP)
+[FMS_Tower_PC] Creating proposal
+[FMS_Tower_PC] Sent message to Product_RPi (PROPOSE)
+[Product_RPi] Received message from FMS_Tower_PC@192.168.2.90:4096 (PROPOSE)
+[Product_RPi] Sent message to FMS_Tower_PC@192.168.2.90:4096 (ACCEPT_PROPOSAL)
+[FMS_Tower_PC] Received message from Product_RPi (ACCEPT_PROPOSAL)
+[FMS_Tower_PC] Proposal Accepted
+[FMS_Tower_PC] Sent message to Product_RPi (INFORM)
+[Product_RPi] Received message from FMS_Tower_PC@192.168.2.90:4096 (INFORM)
+[Product_RPi] Sent message to EMA@192.168.4.4:4000 (SEARCH REQUEST)
+[Product_RPi] Received message from EMA@192.168.4.4:4000 (INFORM)
+[Product_RPi] Sent message to Transport_ESP32@192.168.250.105:4001 (REQUEST)
+[Transport_ESP32] Received message from Product_RPi (REQUEST)
+[Transport_ESP32] Received transport request to target location: D (Current location: D)
+[Transport_ESP32] Sent message to Product_RPi@192.168.4.4:4013 (AGREE)
+[Product_RPi] Received message from Transport_ESP32@192.168.250.105:4001 (AGREE)
+[Transport_ESP32] Product is already at target location: D
+[Transport_ESP32] Sent message to Product_RPi@192.168.4.4:4013 (INFORM)
+[Product_RPi] Received message from Transport_ESP32@192.168.250.105:4001 (INFORM)
+[Product_RPi] Sent message to FMS_Tower_PC@192.168.2.90:4096 (REQUEST)
+[FMS_Tower_PC] Received message from Product_RPi (REQUEST)
+[FMS_Tower_PC] Received REQUEST execute skill
+[FMS_Tower_PC] Sent message to Product_RPi (AGREE)
+[Product_RPi] Received message from FMS_Tower_PC@192.168.2.90:4096 (AGREE)
+[FMS_Tower_PC] Skill executed: Screw
+[FMS_Tower_PC] Sent message to Product_RPi (INFORM)
+[Product_RPi] Received message from FMS_Tower_PC@192.168.2.90:4096 (INFORM)
+
+///////// End Location Transport /////////
+[Product_RPi] Sent message to EMA@192.168.4.4:4000 (SEARCH REQUEST)
+[Product_RPi] Received message from EMA@192.168.4.4:4000 (INFORM)
+[Product_RPi] Sent message to Transport_ESP32@192.168.250.105:4001 (REQUEST)
+[Transport_ESP32] Received message from Product_RPi (REQUEST)
+[Transport_ESP32] Received transport request to target location: A (Current location: D)
+[Transport_ESP32] Sent message to Product_RPi@192.168.4.4:4013 (AGREE)
+[Product_RPi] Received message from Transport_ESP32@192.168.250.105:4001 (AGREE)
+[Transport_ESP32] Moving product from D to E
+[Transport_ESP32] Arrived at E
+[Transport_ESP32] Moving product from E to F
+[Transport_ESP32] Arrived at F
+[Transport_ESP32] Moving product from F to A
+[Transport_ESP32] Arrived at A
+[Transport_ESP32] Sent message to Product_RPi@192.168.4.4:4013 (INFORM)
+[Product_RPi] Received message from Transport_ESP32@192.168.250.105:4001 (INFORM)
+
+///////// Product Deregistration and Cleanup /////////
+[Product_RPi] Sent message to EMA@192.168.4.4:4000 (DEREGISTRATION REQUEST)
+[Product_RPi] Received message from EMA@192.168.4.4:4000 (INFORM)
+[Product_RPi] Agent Taken Down

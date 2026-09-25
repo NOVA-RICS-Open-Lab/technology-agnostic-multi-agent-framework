@@ -1,0 +1,34 @@
+@startuml
+skinparam defaultFontSize 20
+skinparam titleFontSize 24
+skinparam participantFontSize 18
+hide footbox
+
+participant "Product" as PA
+participant "Agent Directory Service" as DF
+participant "Skilled N" as SA
+participant "Transport" as TA
+
+PA -> PA: Birth
+loop Next step in production process
+    PA -> PA: Check next step
+    
+    PA -> DF: Look for Skilled Agents providing this service
+    DF --> PA: Return available Skilled Agents
+    
+    PA -> SA: Request proposals
+    SA --> PA: Proposal (with location)
+    PA -> PA: Select Skilled Agent
+    
+    alt Product is NOT at Skilled Agent's location
+        PA -> DF: Look for Transport Agent
+        DF --> PA: Return Transport Agent
+        PA -> TA: Transportation request to needed location
+        TA --> PA: Notify arrival at location
+        
+    end
+    PA -> SA: Service request
+    SA --> PA: Service executed
+end
+
+@enduml
