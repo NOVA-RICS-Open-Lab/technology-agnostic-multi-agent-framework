@@ -15,7 +15,7 @@
 and Associated Lab of Intelligent Systems (LASI), NOVA University
 Lisbon, 2829-516 Lisbon, Portugal
 
-The **Technology-Agnostic Multi-Agent Framework (TAMAF)** provides an open, distributed control architecture designed to address the interoperability and integration challenges of Multi-Agent Systems (MAS) in Cyber-Physical Production Systems and Industry 4.0. Built around modularity and platform agnosticism, TAMAF establishes a unified communication and coordination layer that seamlessly spans all hierarchy levels—from low-level **Edge computing** on embedded hardware to mid-level **Fog computing** and high-level **Cloud computing**. The framework is validated across heterogeneous environments with native implementations in **Python** (Fog/Cloud), **Java** (Cloud/Enterprise), and **C++** (ESP32/Edge), enabling autonomous, resilient, and collaborative distributed automation.
+The **Technology-Agnostic Multi-Agent Framework (TAMAF)** provides an open, distributed control architecture designed to address the interoperability and integration challenges of Multi-Agent Systems (MAS) in Cyber-Physical Production Systems and Industry 4.0. Built around modularity and platform agnosticism, TAMAF establishes a unified communication and coordination layer that seamlessly spans all hierarchy levels: from low-level **Edge computing** on embedded hardware to mid-level **Fog computing** and high-level **Cloud computing**. The framework is validated across heterogeneous environments with native implementations in **Python** (Fog/Cloud), **Java** (Cloud/Enterprise), and **C++** (ESP32/Edge), enabling autonomous, resilient, and collaborative distributed automation.
 
 ## <div align="center">Get Started</div>
 </div>
