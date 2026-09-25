@@ -14,7 +14,7 @@
 # Technology Agnostic Multi-Agent Framework
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-red.svg)](https://opensource.org/licenses/MIT)
-[![DOI](https://img.shields.io/badge/DOI-ICPS_2024-darkblue)](https://doi.org/10.1109/ICPS59941.2024.10639979)
+[![DOI](https://img.shields.io/badge/DOI-ICPS_2024-darkblue)]()
 [![NOVA SST: Thesis](https://img.shields.io/badge/NOVA_SST-Thesis-blue)]()
 
 [Raúl Mestre Dinis](https://scholar.google.pt/citations?user=k1GIyqcAAAAJ&hl=pt-PT)<sup>1</sup>,
@@ -39,7 +39,7 @@ The framework provides three interoperable packages under [`src/mk3`](./src/mk3)
 
 **Direct Git Installation**
 ```bash
-pip install "git+https://github.com/novaricsopenlab/technology-agnostic-multi-agent-framework.git#subdirectory=src/mk3/PythonPackage"
+pip install "git+https://github.com/NOVA-RICS-Open-Lab/technology-agnostic-multi-agent-framework.git#subdirectory=src/mk3/PythonPackage"
 ```
 
 **Verify installation:**
@@ -54,7 +54,7 @@ python -c "import tamaf; print('TAMAF successfully installed!')"
 
 **Clone this repository to your local machine:**
 ```bash
-git clone https://github.com/novaricsopenlab/technology-agnostic-multi-agent-framework.git
+git clone https://github.com/NOVA-RICS-Open-Lab/technology-agnostic-multi-agent-framework.git
 cd technology-agnostic-multi-agent-framework
 ```
 
@@ -74,7 +74,7 @@ python -c "import tamaf; print('TAMAF successfully installed!')"
 
 **Clone this repository to your local machine:**
 ```bash
-git clone https://github.com/novaricsopenlab/technology-agnostic-multi-agent-framework.git
+git clone https://github.com/NOVA-RICS-Open-Lab/technology-agnostic-multi-agent-framework.git
 cd technology-agnostic-multi-agent-framework
 ```
 
@@ -100,7 +100,7 @@ mvn clean install
 
 **Clone this repository to your local machine:**
 ```bash
-git clone https://github.com/novaricsopenlab/technology-agnostic-multi-agent-framework.git
+git clone https://github.com/NOVA-RICS-Open-Lab/technology-agnostic-multi-agent-framework.git
 ```
 
 1. In Arduino IDE, navigate to **Sketch** > **Include Library** > **Add .ZIP Library...**.
@@ -117,7 +117,7 @@ git clone https://github.com/novaricsopenlab/technology-agnostic-multi-agent-fra
 
 **Clone this repository to your local machine:**
 ```bash
-git clone https://github.com/novaricsopenlab/technology-agnostic-multi-agent-framework.git
+git clone https://github.com/NOVA-RICS-Open-Lab/technology-agnostic-multi-agent-framework.git
 ```
 
 **In your PlatformIO project's `platformio.ini`:**
