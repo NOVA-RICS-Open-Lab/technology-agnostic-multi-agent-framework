@@ -147,8 +147,11 @@ Before starting any agents, an **EMA** instance must be running on your network 
 import time
 from tamaf import LaunchEMA
 
-ema = LaunchEMA(debug=False)
-time.sleep(1)
+ema = LaunchEMA()
+
+while ema.IsAlive():
+    time.sleep(1)
+
 ```
 
 ---
@@ -173,7 +176,7 @@ import time
 from tamaf import Agent, LaunchEMA
 
 # 1. Start EMA
-ema = LaunchEMA(debug=False)
+ema = LaunchEMA()
 time.sleep(1)
 
 # 2. Define custom agent
@@ -447,7 +450,7 @@ from tamaf import (
 )
 
 # 1. Start EMA
-ema = LaunchEMA(debug=False)
+ema = LaunchEMA()
 time.sleep(1)
 
 # 2. Define Responder Agent
