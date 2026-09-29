@@ -1,0 +1,15 @@
+Metadata-Version: 2.4
+Name: tamaf
+Version: 3.0.0
+Summary: Python TAMAF Implementation
+Author-email: Raúl Mestre Dinis <raul.mestredinis@gmail.com>
+License: MIT
+Project-URL: Git, https://github.com/NOVA-RICS-Open-Lab/technology-agnostic-multi-agent-framework
+Project-URL: Issues, https://github.com/NOVA-RICS-Open-Lab/technology-agnostic-multi-agent-framework/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: python-dotenv>=1.0.0
+Dynamic: license-file

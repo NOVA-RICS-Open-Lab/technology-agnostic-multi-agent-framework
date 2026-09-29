@@ -1,0 +1,17 @@
+Registration Time: 0.248
+Round Trip Times:
+sender1: 0.011
+sender2: 0.015
+sender3: 0.013
+sender4: 0.016
+sender5: 0.01
+sender6: 0.015
+sender7: 0.011
+sender8: 0.009
+sender9: 0.009
+sender10: 0.014
+sender11: 0.012
+sender12: 0.016
+sender13: 0.017
+sender14: 0.013
+sender15: 0.016
