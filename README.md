@@ -69,10 +69,9 @@ cd technology-agnostic-multi-agent-framework
 
 **Compile and install to local Maven cache:**
 ```bash
-cd src/mk3/JavaPackage
-mvn clean install
+mvn clean install -f src/mk3/JavaPackage
 ```
-*(Use `mvn clean install -DskipTests` to skip unit tests).*
+*(Use `mvn clean install -f src/mk3/JavaPackage -DskipTests` to skip unit tests).*
 
 **Add to your project (`pom.xml`):**
 ```xml
